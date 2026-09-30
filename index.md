@@ -1,6 +1,6 @@
 # Política de Privacidad - Kambio
 
-**Última actualización:** 26 de septiembre de 2026
+**Última actualización:** 30 de septiembre de 2026
 
 En **Kambio**, la privacidad de nuestros usuarios es una prioridad. Debido a la naturaleza técnica y simplificada de la aplicación, esta política es directa y transparente.
 
@@ -8,6 +8,7 @@ En **Kambio**, la privacidad de nuestros usuarios es una prioridad. Debido a la 
 **Kambio** es una herramienta de consulta que **no recopila, no almacena ni transmite** ningún tipo de información personal identificable (PII).
 * No solicitamos registros, cuentas de usuario ni acceso a datos de redes sociales.
 * No rastreamos el comportamiento del usuario ni utilizamos servicios de analítica.
+* Cuando la aplicación falla o tarda anormalmente en iniciar, se envía automáticamente un **reporte técnico de error** (ver sección 4) que no contiene datos personales.
 * Las preferencias que configuras dentro de la app (moneda, tasa personal) se guardan **únicamente en tu dispositivo** y nunca se envían al desarrollador.
 
 ## 2. Permisos del Sistema
@@ -22,8 +23,9 @@ Las tasas mostradas son datos públicos obtenidos por el desarrollador de fuente
 La aplicación utiliza servicios de infraestructura de **Google (Firebase)** para funcionar:
 * **Cloud Firestore y Remote Config:** para leer las tasas y la configuración de la app. Estas consultas no incluyen datos personales.
 * **Firebase Cloud Messaging:** para las notificaciones de tasas. Google gestiona un identificador anónimo de la instalación (token) necesario para entregarlas; no está asociado a datos personales y puedes revocarlas desde el sistema.
+* **Firebase Crashlytics:** para detectar y corregir fallos. Si la app se cierra inesperadamente o su arranque tarda más de lo normal, se envía un reporte técnico con el detalle del error, la versión de la app y del sistema operativo, el modelo del dispositivo y un identificador anónimo de instalación generado por Google. No incluye tu nombre, contactos ni ningún dato que te identifique personalmente, y se usa únicamente para reparar defectos y mejorar el rendimiento.
 
-En su versión actual, **Kambio** no integra redes publicitarias (Ads), analítica ni reportes automáticos de errores.
+En su versión actual, **Kambio** no integra redes publicitarias (Ads) ni servicios de analítica.
 
 ## 5. Seguridad
 Todas las conexiones se realizan mediante protocolos estándar (HTTPS/TLS) hacia los servicios de Google Cloud/Firebase, para garantizar que la información mostrada sea fidedigna y no sea interceptada durante la transmisión.
